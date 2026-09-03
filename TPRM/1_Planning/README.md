@@ -19,9 +19,22 @@ without a procedure is just a nice idea nobody knows how to execute.
 
 Next, you need to know who your third parties even are. That's the 
 **Third-Party Inventory** — a running list of every vendor, supplier, or 
-external party your organization deals with. Sounds obvious, but this 
-is often where things fall apart in real life — companies lose track of 
+external party your organization deals with. Companies lose track of 
 smaller vendors, and those blind spots are exactly where risk hides.
+
+**How vendors typically get discovered**, based on what I've learned:
+- Existing signed contracts
+- Finance/payment records (who's actually been paid)
+- IT network scans, for tools employees may have signed up for without 
+  formal procurement (shadow IT)
+- Directly asking business units what external parties they work with, 
+  since some relationships don't involve money or a formal contract at all
+
+**How to read the file:**
+- The **Third-Party Inventory** tab lists each vendor with risk tier, 
+  scope status, and due diligence status
+- The **Dashboard** tab summarizes the inventory — total vendors, risk 
+  distribution, and pending due diligence — as a quick-glance view
 
 Now that you know who your vendors are, not all of them carry the same 
 risk. That's where **Organizational Risk Ratings** come in — a way to 
