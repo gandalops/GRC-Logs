@@ -41,6 +41,28 @@ risk. That's where **Organizational Risk Ratings** come in — a way to
 score each vendor so you know where to focus your energy. High-risk 
 vendors get closer scrutiny, low-risk ones don't need the same effort.
 
+## Risk Ratings — How I Approached Scoring
+
+Not every vendor carries the same level of risk, so before assessing 
+anyone, you need a shared definition of what "risk appetite" even means 
+for the organization — how much risk it's willing to tolerate to get 
+business done. This isn't one-size-fits-all: an organization might have 
+very low tolerance for compliance risk, but be more flexible on minor 
+operational risk.
+
+For this project, I used a simple five-level scale to rate risk:
+
+- **Critical** — something that's already happening or almost certainly 
+  will, with severe consequences
+- **High** — likely to happen soon, with major consequences
+- **Medium** — could happen within the next year, moderate consequences
+- **Low** — unlikely in the near term, limited consequences
+- **Nominal** — worth tracking, but low likelihood and low impact
+
+Risk is scored using a standard 5x5 Likelihood × Impact matrix (see the 
+Risk Matrix tab) — each vendor gets a likelihood score and an impact 
+score, and the matrix determines the overall risk rating.
+
 Someone also has to own all of this — who approves what, who assesses 
 what, who escalates when something goes wrong. That's **Governance**: 
 clear roles and responsibilities, so decisions don't get stuck or made 
@@ -67,6 +89,7 @@ business if this function didn't exist.
 ## What's in This Folder
 
 - **Business_Case_Template.docx** — a blank structure you can reuse
-- **Business_Case_Example_[MockCompany].docx** — same template, filled 
+- **TPRM_Third_Party_Inventory.xlsx** - Vendor inventory list added
+- **TPRM_Organizational_Risk_Ratings.xlsx** - Risk Register added
   in with a made-up scenario, just to show how it actually gets used
 - *(more added as I build out this folder)*
