@@ -1,4 +1,4 @@
-1.0 General Security Concepts: CIA Triad Fundamentals
+# 1.2 General Security Concepts: CIA Triad Fundamentals
 
 Overview
 
