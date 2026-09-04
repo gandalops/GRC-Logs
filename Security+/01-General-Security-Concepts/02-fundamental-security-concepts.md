@@ -1,40 +1,54 @@
-# 1.2 General Security Concepts: CIA Triad Fundamentals
+# 1.1 General Security Concepts: The CIA Triad
 
-Overview
+## Overview
 
-The CIA Triad forms the core foundation of information security[cite: 1]. It provides a framework for protecting organizational systems and data by balancing three primary objectives: Confidentiality, Integrity, and Availability[cite: 1]. To avoid confusion with the U.S. Central Intelligence Agency, this framework is occasionally referred to as the AIC Triad[cite: 1].
+The CIA Triad (Confidentiality, Integrity, and Availability)—sometimes referenced as the AIC Triad to avoid confusion with the U.S. Central Intelligence Agency—serves as the foundational model for establishing security policies, evaluating controls, and defining an organization's overall security posture.
 
-1. Core Security Objectives
+---
 
-The CIA Triad evaluates security posture across three distinct legs, each targeting a specific protection objective:
+## 1. Core Objectives of the Triad
 
-| Security Objective | Functional Purpose | Primary Implementation Methods |
-| :--- | :--- | :--- |
-| **Confidentiality** | Limits data visibility solely to authorized entities and prevents unauthorized exposure[cite: 1]. | • Data Encryption (in-transit & at-rest)[cite: 1]<br>• Access Control Lists (ACLs) & Role-Based Access[cite: 1]<br>• Multi-Factor Authentication (MFA)[cite: 1] |
-| **Integrity** | Ensures data remains unaltered, accurate, and trustworthy throughout transmission and storage[cite: 1]. | • Cryptographic Hashing[cite: 1]<br>• Asymmetric Digital Signatures[cite: 1]<br>• Identity Certificates (PKI)[cite: 1]<br>• Non-repudiation controls[cite: 1] |
-| **Availability** | Guarantees operational infrastructure and data remain continuously accessible to legitimate users[cite: 1]. | • High-availability & fault-tolerant architectures[cite: 1]<br>• Hardware/system redundancy[cite: 1]<br>• Continuous patch management & updates[cite: 1] |
+The three security objectives define the core goals of information protection:
 
-2. Key Security Mechanics & Takeaways
+| Security Objective | Functional Definition | Primary Threats / Risks | Implementation Safeguards |
+| :--- | :--- | :--- | :--- |
+| **Confidentiality** | Restricts data access strictly to authorized entities and prevents unauthorized disclosure | Data breaches, eavesdropping, unauthorized file access | Encryption (in-transit/at-rest), Access Control Lists (ACLs), Multi-Factor Authentication (MFA) |
+| **Integrity** | Guarantees that information remains accurate, untampered, and authentic throughout its lifecycle | Data modification, unauthorized alterations, man-in-the-middle attacks | Hashing algorithms, Digital Signatures, Public Key Infrastructure (PKI) Certificates |
+| **Availability** | Ensures operational systems and data remain accessible to authorized users when needed | System outages, hardware failures, Denial of Service (DoS) attacks | Hardware redundancy, Fault Tolerance, continuous system patch management |
 
-* **Access Isolation:** Confidentiality relies on limiting exposure based on role—such as granting marketing personnel access to campaign materials while completely restricting access to accounting data[cite: 1].
-* **Data Verification:** Cryptographic hashes allow recipients to verify that incoming data matches the sender's original payload without modification[cite: 1].
-* **Identity Assurance:** Digital signatures pair hashing with asymmetric key encryption to simultaneously guarantee data integrity and validate sender identity[cite: 1].
-* **Non-Repudiation:** Technical controls prevent entities from denying their actions by combining verified proof of origin with cryptographic integrity[cite: 1].
-* **Uptime Maintenance:** Maintaining system availability requires eliminating single points of failure through redundancy and proactively closing software vulnerabilities via regular patching[cite: 1].
+---
 
-3. Industry Framework Cross-References
+## 2. Key Mechanisms & Implementation Methods
 
-NIST SP 800-53 Rev. 5:
-* Access Control (AC): AC-1 through AC-25 (Confidentiality)[cite: 1]
-* System and Communications Protection (SC): SC-8, SC-12 (Integrity & Confidentiality)[cite: 1]
-* Contingency Planning (CP): CP-1 through CP-13 (Availability)[cite: 1]
+Security mechanisms operationalize the core objectives across IT environments:
 
-ISO/IEC 27001:2022 / ISO/IEC 27002:2022 Annex A:
-* Control A.5.15 (Access Control): Confidentiality[cite: 1]
-* Control A.8.24 (Use of Cryptography): Integrity & Confidentiality[cite: 1]
-* Control A.8.14 (Redundancy of Information Processing Facilities): Availability[cite: 1]
+| Mechanism | CIA Pillar | Primary Security Function | Key Examples |
+| :--- | :--- | :--- | :--- |
+| **Encryption** | Confidentiality | Transforms plaintext into unreadable ciphertext to prevent interception | AES-256, TLS/SSL protocols |
+| **Access Controls** | Confidentiality | Limits access permissions based on user identity or department role | Role-Based Access Control (RBAC), Least Privilege |
+| **Hashing** | Integrity | Generates fixed-length cryptographic digests to verify data integrity | SHA-256, MD5 checksums |
+| **Digital Signatures** | Integrity | Combines hashing and asymmetric encryption to enforce non-repudiation | RSA/ECC signed messages |
+| **Fault Tolerance** | Availability | Duplicates critical components to prevent single points of failure | RAID arrays, redundant power supplies |
+| **Patch Management** | Availability | Remediates system vulnerabilities to ensure system stability and uptime | Regular OS and software updates |
 
-CIS Critical Security Controls v8:
-* Control 3 (Data Protection): Confidentiality & Integrity[cite: 1]
-* Control 6 (Access Control Management): Confidentiality[cite: 1]
-* Control 7 (Continuous Vulnerability Management): Availability & System Integrity[cite: 1]
+---
+
+## 3. Industry Framework Cross-References
+
+To contextualize these security objectives within recognized global standards:
+
+* **NIST SP 800-53 Rev. 5:**
+  * *Access Control (AC):* Confidentiality & Authentication
+  * *System and Communications Protection (SC):* Confidentiality & Integrity (Encryption/Hashing)
+  * *System and Information Integrity (SI):* Integrity & Flaw Remediation (Patching)
+  * *Contingency Planning (CP):* Availability & Fault Tolerance
+* **ISO/IEC 27001:2022 / 27002:2022 Annex A:**
+  * *Control 5.15 (Access control):* Confidentiality
+  * *Control 8.8 (Management of technical vulnerabilities):* Availability / Integrity
+  * *Control 8.14 (Redundancy of information processing facilities):* Availability
+  * *Control 8.24 (Use of cryptography):* Confidentiality & Integrity
+* **CIS Critical Security Controls v8:**
+  * *Control 3 (Data Protection):* Confidentiality & Integrity
+  * *Control 6 (Access Control Management):* Confidentiality
+  * *Control 7 (Vulnerability Management):* Availability & Integrity
+  * *Control 11 (Data Recovery):* Availability
