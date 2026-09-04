@@ -18,3 +18,13 @@ Management (non-financial).
 
 This is my ongoing GRC knowledge log — what I'm learning, how I'm 
 learning it, and the artifacts I'm building along the way.
+
+## Currently Building Toward
+- ISO 27001 (Information Security Management System)
+- ISO 31000 (Enterprise Risk Management)
+- ISO 42001 (AI Governance)
+- ISO 22301 (Business Continuity)  
+- DORA, NIST frameworks
+- GDPR, PCI DSS, HIPAA, OWASP
+
+*Still loading — this list grows as I do.*
