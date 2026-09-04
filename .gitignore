@@ -1,0 +1,31 @@
+# ==========================================
+# 1. GLOBAL PROTECTION (ALL FOLDERS)
+# ==========================================
+# Block all PDF standards, books, and paid resources everywhere
+*.pdf
+
+# System & IDE junk files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==========================================
+# 2. TEMPLATE RULES
+# ==========================================
+# Ignore general Office documents by default to prevent accidental leaks
+*.docx
+*.xlsx
+*.pptx
+
+# EXCEPTION: Explicitly allow files inside any "templates" directory
+!**/templates/*.xlsx
+!**/templates/*.docx
+!**/templates/*.csv
+
+# ==========================================
+# 3. SPECIFIC SUBFOLDER RESTRICTIONS
+# ==========================================
+# Extra safeguard: Block temporary/working files inside Security+
+Security+/*.tmp
+Security+/*.log
