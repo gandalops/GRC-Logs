@@ -22,18 +22,6 @@ Hashing functions rely on uniform output properties and collision resistance to 
 
 Digital signatures utilize combined asymmetric key operations and cryptographic hashes to deliver **authentication**, **integrity**, and **non-repudiation**:
 
-# 1.15 General Security Concepts: Cryptographic Hashing, Salting & Digital Signatures
-
-## Overview
-
-Cryptographic hashes generate fixed-length digital fingerprints (message digests) from variable-length inputs to guarantee data integrity. Unlike encryption, hashing is a one-way mathematical function and cannot be reversed to restore original plaintexts. Hashes underpin download verification, credential storage through salting mechanisms, and non-repudiation controls via digital signatures.
-
----
-
-## 2. Digital Signature Operations & Lifecycle
-
-Digital signatures utilize combined asymmetric key operations and cryptographic hashes to deliver **authentication**, **integrity**, and **non-repudiation**:
-
 * **Signature Generation (Sender):**
   1. The plain text message is passed through a hashing algorithm to compute a message digest.
   2. The digest is encrypted using the sender's **Private Key**, creating the digital signature.
