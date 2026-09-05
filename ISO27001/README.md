@@ -1,4 +1,3 @@
-```markdown
 # ISO/IEC 27001 Implementation & ISMS Governance Framework
 
 ## Overview & Purpose
@@ -13,20 +12,18 @@ Rather than viewing ISO 27001 purely through an academic or audit-only lens, thi
 
 Every module in this repository is analyzed and documented using a combined **Project Management** and **Audit-Diagnostic** approach:
 
-```mermaid
-graph TD
-    Root[ISO 27001 IMPLEMENTATION] --> Lens1[PROJECT MANAGEMENT LENS]
-    Root --> Lens2[AUDIT & GOVERNANCE LENS]
+| Primary Phase | Focus Area | Core Modules / Components |
+| --- | --- | --- |
+| **ISO 27001 Implementation** | **Project Management Lens** | • Phase & Scope Control<br>
 
-    Lens1 --> PM1[Phase & Scope Control]
-    Lens1 --> PM2[Milestone & Asset Planning]
-    Lens1 --> PM3[Risk & Issue Mitigation]
+<br>• Milestone & Asset Planning<br>
 
-    Lens2 --> AG1[Core Concept Synthesis]
-    Lens2 --> AG2[Auditor Evaluation Criteria]
-    Lens2 --> AG3[Pitfall & Red-Flag Diagnostic]
+<br>• Risk & Issue Mitigation |
+|  | **Audit & Governance Lens** | • Core Concept Synthesis<br>
 
-```
+<br>• Auditor Evaluation Criteria<br>
+
+<br>• Pitfall & Red-Flag Diagnostic |
 
 ### Framework Breakdown
 
@@ -66,7 +63,7 @@ To ensure the output withstands third-party assessment, each topic is evaluated 
 
 ## Repository Structure & Project Lifecycle Mapping
 
-```plaintext
+```
 ISO27001/
 ├── 01-Initiation/               # Business Case, Stakeholders, Context, and Executive Buy-in
 ├── 02-Planning/                 # Scope, Asset Inventory, Risk Methodology, Roadmap, and SoA
@@ -119,5 +116,3 @@ ISO27001/
 
 * `05.1-Certification-Readiness/` — Stage 1 and Stage 2 external audit preparation.
 * `05.2-Capstone-ISMS-Handover/` — Final portfolio pack, operational handover to steady-state, and project closeout.
-
-```
