@@ -88,4 +88,31 @@ Auditors quickly identify poorly structured asset management practices through t
 | **Omission of Vendor-Stored Data** | Customer and business data stored inside third-party platforms (e.g., identity verification copies, CRM records, support tools) is missing from the scope. | Include vendor-hosted data containers as distinct information assets with assigned internal owners. |
 | **Generic Departmental Ownership** | Asset owners are designated as generic groups (e.g., "DevOps Team", "IT Dept") instead of specific named job roles or individuals. | Update the inventory to assign explicit accountability for every asset to a named role or person. |
 
+---
+
+## 7. Auditor Line of Inquiry: ISO Family & SoA Assessment
+
+During Stage 1 and Stage 2 certification audits, external auditors utilize targeted lines of inquiry to verify that the organization understands standard hierarchy and maintains a defendable Statement of Applicability (SoA):
+
+| Audit Line of Inquiry | Target Clause / Requirement | Evaluation Objective |
+| :--- | :--- | :--- |
+| **"Walk me through the exact process your team used to determine whether each Annex A control was applicable or excluded."** | Clause 6.1.3(b), Clause 6.1.3(c) | Verifies that control selection is directly driven by risk treatment outputs and contractual obligations rather than arbitrary selection. |
+| **"Show me the documented business or technical justification for excluding this specific Annex A control."** | Clause 6.1.3(d) | Validates that excluded controls have defendable rationales proving the associated risk profile does not exist within the ISMS scope. |
+| **"Where is the operational record proving this applicable control executed effectively during the previous quarter?"** | Clause 9.1, Annex A Controls | Tests the link between SoA claims and unedited, time-stamped proof (Records) rather than administrative policies (Documents). |
+| **"How do you ensure that changes in your risk register trigger updates to your Statement of Applicability?"** | Clause 6.1.2, Clause 8.1 | Assesses whether the SoA functions as a living governance artifact rather than a static certification snapshot. |
+
+---
+
+## 8. Statement of Applicability (SoA) Audit Red Flags
+
+External auditors quickly identify flawed or non-compliant SoA implementations through specific structural red flags:
+
+| SoA Red Flag | Governance Defect | Corrective Action |
+| :--- | :--- | :--- |
+| **Uniform "Applicable & Implemented" Status** | Marking all 93 controls as fully implemented with identical boilerplate text to obscure real status. | Perform an honest baseline evaluation; mark controls correctly as `Partial`, `Planned`, or `Excluded` with distinct rationales. |
+| **Unlinked Applicable Controls** | Marking a control as `Applicable` without citing specific Risk Register IDs, customer contracts, or legal duties. | Map every applicable control to at least one corresponding risk entry (e.g., `R-014`) or compliance requirement. |
+| **Unjustified Exclusions** | Marking controls as `Not Applicable` without providing an explicit, contextual justification statement. | Add clear, scope-based rationale for every excluded control (e.g., *"A.7.1 excluded: Organization operates 100% remote with no physical data centers"*). |
+| **Broken Evidence References** | Pointing SoA evidence fields to missing files, dead internal links, or generic policy folders without specific record references. | Validate that all evidence identifiers (e.g., `EVD-2026-Q1-LOG`) resolve directly to active, verifiable records. |
+| **Certification Claims Against ISO 27002** | Stating in governance documentation or SoA text that the organization is "ISO 27002 certified." | Correct language across all materials to specify certification against **ISO/IEC 27001**, using ISO 27002 strictly for implementation guidance. |
+
 ```
