@@ -43,6 +43,7 @@ Focuses on ensuring all security work satisfies strict third-party audit require
 
 ```
 ISO27001/
+├── 00-Reference-and-Foundations/ # Cross-cutting concepts, reference architecture, and general GRC knowledge
 ├── 01-Initiation/               # Business Case, Stakeholders, Context, and Executive Buy-in
 ├── 02-Planning/                 # Scope, Asset Inventory, Risk Methodology, Roadmap, and SoA
 ├── 03-Execution/                # Governance, Sub-Policies, RACI, Training, and Control Rollout
@@ -54,6 +55,11 @@ ISO27001/
 ---
 
 ## Module Breakdown Across the Implementation Lifecycle along with Mapped to ISO/IEC 27001:2022 Clauses
+
+### Phase 0: Foundations & Reference Workspace
+* `00.1-General-Reference-and-Terminology/` — Master glossary of GRC terms, abbreviation registers, and ISO taxonomy mappings. *(Standard Vocabulary Baseline)*
+* `00.2-GRC-Framework-Crosswalks/` — Comparative mappings between ISO 27001:2022, NIST CSF, SOC 2, and CIS Controls. *(Framework Interoperability)*
+* `00.3-Tooling-and-Evidence-Templates/` — General repository templates, evidence collection guidelines, and Markdown scaffolding notes. *(Operational Support)*
 
 ### Phase 1: Project Initiation (Foundations & Context)
 * `01.1-Business-Case-and-Context/` — Commercial drivers, executive buy-in, and organizational context. *(Project Governance Baseline)*
