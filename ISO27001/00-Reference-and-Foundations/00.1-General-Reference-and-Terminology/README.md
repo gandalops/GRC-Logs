@@ -164,7 +164,102 @@ Evaluating assets through CIA scoring directly dictates control selection during
 | **Integrity (I)** | Preventing unauthorized modification, corruption, or deletion. | Input validation, cryptographic hashing, change management workflows, dual-custody (four-eyes) approvals. |
 | **Availability (A)** | Ensuring timely and reliable access for authorized users. | High Availability (HA) clustering, database replication, automated backups, Disaster Recovery (DR) failover. |
 
+---
+
+## 7. The ISO 27000 Standard Family Taxonomy
+
+To maintain clarity across governance documentation, distinguish between the five core structural components using the **Commercial Aviation Governance** model:
+
+```text
+  ┌────────────────────────────────────────────────────────┐
+  │ 1. Mandatory Airworthiness Standard (ISO/IEC 27001)   │
+  ├────────────────────────────────────────────────────────┤
+  │ 2. Maintenance Engineering Guidance (ISO/IEC 27002)    │
+  ├────────────────────────────────────────────────────────┤
+  │ 3. Approved Parts & Safeguards Catalog (Annex A)      │
+  ├────────────────────────────────────────────────────────┤
+  │ 4. Fleet Operating Master Schedule (SoA)               │
+  ├────────────────────────────────────────────────────────┤
+  │ 5. Maintenance Flight Logs & Sign-Offs (Evidence)      │
+  └────────────────────────────────────────────────────────┘
+
 ```
 
+* **ISO/IEC 27001 (Auditable Rules):** The primary airworthiness standard. Defines mandatory requirements (Clauses 4–10) and contains Annex A reference controls. This is the only standard against which an organization achieves formal certification.
+* **ISO/IEC 27002 (Implementation Guidance):** The engineering maintenance manual. Provides detailed operational guidance on how to execute each control in Annex A. It cannot be audited against directly for certification.
+* **Annex A (Control Reference Set):** The approved catalog of 93 control references across 4 operational themes. Used during risk treatment to select applicable safeguards.
+* **Statement of Applicability - SoA (Operating Schedule):** The formal manifest declaring which Annex A controls apply to the fleet, their implementation status, justifications for selection/exclusion, and linked evidence.
+* **Evidence Records (Flight & Maintenance Logs):** The dated, unedited records (e.g., flight logs, sensor readouts, signed maintenance checklists) proving safeguards operated consistently in production.
 
+---
 
+## 8. Documentation Hierarchy: Three Essential Artifact Tiers
+
+Auditors evaluate governance documentation using strict structural distinctions between information containers, specifications, and records:
+
+| Documentation Tier | Operational Definition | System Function | Representative Examples |
+| --- | --- | --- | --- |
+| **Document** | High-level governance text defining how a domain operates. Version-controlled and periodically re-approved. | Establishes policy intent and operational boundaries. | Information Security Policy, Incident Response Plan, Risk Methodology. |
+| **Specification** | Precise, testable rules and technical parameters. Binary compliance criteria (pass/fail). | Establishes enforceable technical baselines. | Password length rules (≥14 chars), patch deployment SLAs (≤14 days), backup frequency rules. |
+| **Record** | Immutable proof that an activity or control executed at a specific point in time. Never edited. | Primary evidence requested by auditors to prove compliance. | Signed Q1 access review log, dated vulnerability scan report, employee training timestamp. |
+
+> **Audit Caution:** Shelves of Documents and Specifications without corresponding unedited Records result in immediate audit non-conformity.
+
+---
+
+## 9. Structural Evolution: 2013 vs. 2022 Revision Delta
+
+The ISO/IEC 27001:2022 update restructured control references to align with cloud-first architectures:
+
+```text
+  ISO/IEC 27001:2013                         ISO/IEC 27001:2022
+  ┌────────────────────────┐                 ┌────────────────────────┐
+  │ 114 Controls           │ ──────────────► │ 93 Controls            │
+  │ 14 Control Families    │   Consolidated  │ 4 Operational Themes   │
+  └────────────────────────┘                 └────────────────────────┘
+
+```
+
+### The 4 Operational Themes (2022 Edition)
+
+1. **Organisational Controls (Theme 5):** 37 controls governing policy, governance, asset management, and vendor oversight.
+2. **People Controls (Theme 6):** 8 controls governing background screening, security awareness, remote work, and offboarding.
+3. **Physical Controls (Theme 7):** 14 controls governing secure perimeters, equipment protection, and clear desk policies.
+4. **Technological Controls (Theme 8):** 34 controls governing access control, cryptography, secure coding, network security, and logging.
+
+### Critical 2022 Control Additions
+
+* **A.5.7** Threat Intelligence
+* **A.5.23** Information Security for Use of Cloud Services
+* **A.5.30** ICT Readiness for Business Continuity
+* **A.8.9** Configuration Management
+* **A.8.10** Information Deletion
+* **A.8.11** Data Masking
+* **A.8.12** Data Leakage Prevention (DLP)
+* **A.8.16** Monitoring Activities
+* **A.8.22** Web Filtering
+* **A.8.28** Secure Coding
+
+---
+
+## 10. The Complete ISO 27000 Series Standard Map
+
+| Category / Domain | Standard Number | Title & Primary Purpose |
+| --- | --- | --- |
+| **Core Baseline** | **ISO/IEC 27000** | Vocabulary, definitions, and foundational concepts across the 27000 family. *(Free)* |
+|  | **ISO/IEC 27001** | Mandatory ISMS requirements for certification (Clauses 4–10 + Annex A). |
+|  | **ISO/IEC 27002** | Operational implementation guidance for Annex A controls. |
+| **Process Guidance** | **ISO/IEC 27003** | Practical ISMS implementation guidance for Clauses 4–10. |
+|  | **ISO/IEC 27004** | Security performance evaluation, measurement, metrics, and KPIs (Clause 9.1). |
+|  | **ISO/IEC 27005** | Information security risk management methodology and assessment guidance (Clause 6.1.2). |
+|  | **ISO/IEC 27007** | Guidelines for internal and external ISMS auditing practices (Clause 9.2). |
+|  | **ISO/IEC 27008** | Technical guidelines for evaluating information security controls. |
+| **Domain Extensions** | **ISO/IEC 27017** | Information security controls for cloud services (pairs with A.5.23). |
+|  | **ISO/IEC 27018** | Protection of Personally Identifiable Information (PII) in public cloud environments. |
+|  | **ISO/IEC 27701** | Privacy Information Management System (PIMS) extension for GDPR compliance. |
+| **Specialized Guidance** | **ISO/IEC 27031** | ICT readiness for business continuity (pairs with A.5.30). |
+|  | **ISO/IEC 27034** | Application security guidelines across software development lifecycles. |
+|  | **ISO/IEC 27035** | Incident management planning, response execution, and lessons learned (A.5.24–A.5.27). |
+|  | **ISO/IEC 27036** | Security governance across supplier and vendor relationships (A.5.19–A.5.22). |
+
+```
