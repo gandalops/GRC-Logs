@@ -10,47 +10,25 @@ Rather than viewing ISO 27001 purely through an academic or audit-only lens, thi
 
 ## Strategic Methodology: The Dual-Lens Framework
 
-Every module in this repository is analyzed and documented using a combined **Project Management** and **Audit-Diagnostic** approach:
+Every module in this repository is analyzed using a **Dual-Lens Approach** combining **Project Management** (how to build it) with **Audit & Governance** (how to pass the audit).
 
-| Primary Phase | Focus Area | Core Modules / Components |
-| --- | --- | --- |
-| **ISO 27001 Implementation** | **Project Management Lens** | • Phase & Scope Control<br>
+---
 
-<br>• Milestone & Asset Planning<br>
+### 1. Project Management Lens (Delivery)
+Focuses on running the ISMS setup like a structured corporate project across five phases: **Initiation**, **Planning**, **Execution**, **Monitoring & Controlling**, and **Closing**.
 
-<br>• Risk & Issue Mitigation |
-|  | **Audit & Governance Lens** | • Core Concept Synthesis<br>
+* **Phase & Scope Control:** Setting clear project boundaries and timelines.
+* **Milestone & Asset Planning:** Tracking deliverables, inventories, and resources.
+* **Risk & Issue Mitigation:** Identifying project blockers before they happen.
 
-<br>• Auditor Evaluation Criteria<br>
+---
 
-<br>• Pitfall & Red-Flag Diagnostic |
+### 2. Audit & Governance Lens (Quality & Compliance)
+Focuses on ensuring all security work satisfies strict third-party audit requirements.
 
-### Framework Breakdown
-
-| Dimension | Primary Focus | Key Operational Objectives |
-| --- | --- | --- |
-| **Project Management Lens** | Delivery & Project Lifecycle | • Phase & Scope Control<br>
-
-<br>• Milestone & Asset Planning<br>
-
-<br>• Risk & Issue Mitigation |
-| **Audit & Governance Lens** | Quality & Compliance | • Core Concept Synthesis<br>
-
-<br>• Auditor Evaluation Criteria<br>
-
-<br>• Pitfall & Red-Flag Diagnostic |
-
-#### 1. Project Management Perspective (Delivery)
-
-An ISMS implementation is a major business project. Content is structured into five sequential phases—**Initiation**, **Planning**, **Execution**, **Monitoring & Controlling**, and **Closing**—ensuring clear milestone tracking, scope boundary management, and risk mitigation throughout the project lifecycle.
-
-#### 2. Audit & Governance Perspective (Quality & Compliance)
-
-To ensure the output withstands third-party assessment, each topic is evaluated against three core diagnostic dimensions:
-
-* **Core Concept & Requirement Synthesis:** In-depth, original explanations of ISO clause expectations and governance mechanisms.
-* **Audit Evaluation Lens:** Key questions, evidence expectations, and diagnostic tests used by auditors to verify control and process integrity.
-* **Implementation Pitfalls & Common Mistakes:** Early identification of operational anti-patterns, broken feedback loops, and failure modes to avoid during deployment.
+* **Core Concept Synthesis:** Straightforward explanations of ISO 27001 clause requirements.
+* **Auditor Evaluation Criteria:** The exact evidence, logs, and questions auditors use to test controls.
+* **Implementation Pitfalls:** Common mistakes and operational failure modes to avoid.
 
 ---
 
