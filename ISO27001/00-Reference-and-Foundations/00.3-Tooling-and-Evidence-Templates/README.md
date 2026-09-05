@@ -62,4 +62,30 @@ Auditors systematically scan for indicators that signal a fragmented or purely p
 | **Orphaned Controls** | Policies or security tools exist in production without linkage to a documented Risk ID or Statement of Applicability entry. | Perform a mapping exercise to tie every active safeguard directly to a documented risk treatment option. |
 | **Unassigned Risk Ownership** | Risks are logged in the register, but no single individual is assigned operational accountability for treatment. | Assign every risk scenario to a specific, named role or individual with appropriate authority. |
 
+---
+
+## 5. Auditor Asset Evaluation & Inventory Audit Questions
+
+External auditors evaluate Annex A 5.9 (Inventory of Information and Other Associated Assets) and risk scoring validity using specific lines of inquiry:
+
+| Audit Question / Line of Inquiry | Target Requirement | Evaluation Objective |
+| :--- | :--- | :--- |
+| **"Walk me through your asset inventory and explain how shadow assets and third-party SaaS tools are accounted for."** | Annex A 5.9, 5.19 | Tests inventory completeness beyond basic AWS/cloud server lists to verify vendor-held data mapping. |
+| **"How did your team arrive at the impact scores for this specific asset across Confidentiality, Integrity, and Availability?"** | Clause 6.1.2 | Verifies that CIA scoring relies on a structured methodology rather than arbitrary impact ratings. |
+| **"What specific integrity protection mechanisms exist for your critical transaction and financial ledgers?"** | Annex A 8.9, 8.24 | Identifies common control imbalances where organizations over-index on confidentiality (IAM/encryption) but lack integrity checks (hash checks, input validation). |
+| **"Who is the named owner of this information asset, and when did they last review access rights?"** | Annex A 5.9, 5.18 | Ensures asset ownership is assigned to named individuals with operational responsibility rather than unassigned team entities. |
+
+---
+
+## 6. Asset Inventory Red Flags (Audit Failure Signals)
+
+Auditors quickly identify poorly structured asset management practices through these key indicators:
+
+| Audit Red Flag | System Vulnerability / Defect | Remediation Action |
+| :--- | :--- | :--- |
+| **Infrastructure-Only Inventories** | The inventory lists server instances, databases, or laptops, but completely omits the information assets living inside them or in SaaS platforms. | Transition asset discovery from infrastructure scans to business-process data flow mapping. |
+| **Uniform High CIA Ratings** | Every asset in the inventory is scored as "High" or "Critical" across C, I, and A, rendering prioritization meaningless. | Recalibrate scoring guidelines to differentiate non-critical operational assets from core restricted data stores. |
+| **Omission of Vendor-Stored Data** | Customer and business data stored inside third-party platforms (e.g., identity verification copies, CRM records, support tools) is missing from the scope. | Include vendor-hosted data containers as distinct information assets with assigned internal owners. |
+| **Generic Departmental Ownership** | Asset owners are designated as generic groups (e.g., "DevOps Team", "IT Dept") instead of specific named job roles or individuals. | Update the inventory to assign explicit accountability for every asset to a named role or person. |
+
 ```
