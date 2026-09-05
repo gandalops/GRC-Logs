@@ -61,3 +61,48 @@ To verify if a control is part of a functional ISMS or just an isolated policy, 
 - Evaluation: When was this control last evaluated during an internal audit or management review?
 
 If any connection in this chain is broken, governance exists only as unverified documentation.
+
+## 3. The 8-Stage ISMS Feedback Loop
+
+An ISMS is an active control loop—analogous to a closed-loop climate system—that continuously evaluates and adapts to business shifts rather than functioning as a passive document repository.
+
+1. **Context Analysis:** Internal and external operational parameters, legal drivers, and organizational dependencies.
+2. **Boundary Scope Definition:** The physical, logical, and operational perimeters governed by the ISMS.
+3. **Risk Identification & Assessment:** Cataloging threat scenarios, vulnerabilities, and potential CIA impacts.
+4. **Risk Treatment Strategy:** Formal decisions to mitigate, transfer, avoid, or accept specific risks.
+5. **Control Deployment:** Implementing targeted technical, administrative, and physical safeguards.
+6. **Operational Evidence Generation:** Collecting logs, sign-offs, and records proving consistent control operation.
+7. **Internal Audit Verification:** Independent assessment verifying system effectiveness and standard adherence.
+8. **Executive Management Review:** Strategic oversight evaluating performance, resource needs, and continuous improvement actions.
+
+```text
+  [1. Context] ──► [2. Scope] ──► [3. Risk Assessment] ──► [4. Risk Treatment]
+       ▲                                                          │
+       │                                                          ▼
+  [8. Mgmt Review] ◄── [7. Internal Audit] ◄── [6. Evidence] ◄── [5. Controls]
+
+```
+
+The feedback loop completes as **Stage 8 (Management Review)** feeds actionable directives back into **Stage 1 (Context)**, sustaining continuous adaptation.
+
+---
+
+## 4. Boundary Definitions: Core ISMS Misconceptions
+
+| Misconception | Operational Reality | Governance Correction |
+| --- | --- | --- |
+| **"The ISMS is our policy folder."** | Policies are static outputs. | The ISMS is the active operating system that generates, enforces, and updates policies. |
+| **"Security tooling (SIEM, MFA) is our ISMS."** | Tools are inputs to individual controls. | Technical safeguards represent only stage 5 of the 8-stage operational loop. |
+| **"Periodic status meetings equal an ISMS."** | Meetings cover partial review functions. | Governance requires complete end-to-end integration across all 8 stages. |
+
+---
+
+## 5. Control Integrity Validation: The 60-Second Loop Test
+
+To verify if a security mechanism is integrated into an active ISMS or operating as an isolated practice, evaluate these five operational linkages:
+
+1. **Risk Alignment:** Which specific Risk ID in the risk register mandates this control?
+2. **Ownership Assignment:** Who is the named individual accountable for running the control?
+3. **Evidence Artifact:** Where is the log or record stored, and what is its retention schedule?
+4. **Audit Scope:** On what date was this control last evaluated during an internal audit?
+5. **Management Review:** What executive decisions or performance metrics were logged for this control during the last governance review?
