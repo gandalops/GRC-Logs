@@ -53,9 +53,7 @@ ISO27001/
 
 ---
 
-## Module Breakdown Across the Implementation Lifecycle along with Mapped to ISO/IEC 27001:2022
-
-## Module Breakdown Across the Implementation Lifecycle
+## Module Breakdown Across the Implementation Lifecycle along with Mapped to ISO/IEC 27001:2022 Clauses
 
 ### Phase 1: Project Initiation (Foundations & Context)
 * `01.1-Business-Case-and-Context/` — Commercial drivers, executive buy-in, and organizational context. *(Project Governance Baseline)*
