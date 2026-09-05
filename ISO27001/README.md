@@ -53,44 +53,34 @@ ISO27001/
 
 ---
 
-## Module Breakdown Across the Implementation Lifecycle
+## Module Breakdown Across the Implementation Lifecycle along with Mapped to ISO/IEC 27001:2022
 
-### Phase 1: Project Initiation (Foundations & Context)
+The table below maps every module deliverable directly to its standard ISO/IEC 27001 requirement clause or Annex A control family.
 
-* `01.1-Business-Case-and-Context/` — Commercial drivers, executive buy-in, and organizational context.
-* `01.2-ISMS-Operating-Model/` — Structural feedback loops, governance architecture, and operating models.
-* `01.3-Information-Assets-and-CIA/` — High-level asset identification and CIA impact baseline.
-* `01.4-ISO-Family-Mapping/` — Comparative analysis of ISO 27001, ISO 27002, and Annex A controls.
-
-### Phase 2: Project Planning (Scope, Risk & Strategy)
-
-* `02.1-Organizational-Context/` — Context registers, internal/external issue analysis.
-* `02.2-Interested-Parties/` — Regulatory, legal, contractual, and stakeholder requirement registers.
-* `02.3-ISMS-Scope-Statement/` — Defining physical, logical, operational, and physical boundaries.
-* `02.4-Asset-Inventory/` — Detailed asset classification, categorization, and ownership assignment.
-* `02.5-Implementation-Roadmap/` — Project work breakdown structures, milestones, and timelines.
-* `02.6-Gap-Assessment/` — Clause-by-clause baseline assessment and readiness analysis.
-* `02.7-Risk-Assessment-Methodology/` — Risk criteria, likelihood/impact scoring models, and risk registers.
-* `02.8-Statement-of-Applicability-SoA/` — Annex A control selection, exclusions, and justifications.
-
-### Phase 3: Project Execution (Governance & Control Deployment)
-
-* `03.1-Leadership-Commitment/` — Governance structures, resource allocation, and policy sign-off.
-* `03.2-Information-Security-Policies/` — Policy architecture, operational standards, and SOPs.
-* `03.3-Roles-Responsibilities-RACI/` — Control ownership assignment and operational RACI matrices.
-* `03.4-Competence-and-Awareness/` — Security awareness program rollout and training tracking.
-* `03.5-Control-Implementation/` — Deploying technical, administrative, physical, and organizational controls.
-* `03.6-Risk-Treatment-Execution/` — Executing mitigation plans and risk treatment schedules.
-
-### Phase 4: Monitoring & Controlling (Performance & Quality Assurance)
-
-* `04.1-Evidence-Collection/` — Log retention strategies, operational records, and evidence repositories.
-* `04.2-Monitoring-Measurement-KPIs/` — Measuring security performance, KPIs, and key risk indicators (KRIs).
-* `04.3-Internal-Audit-Program/` — Independent internal audit planning, testing, and reporting.
-* `04.4-Management-Review/` — Executive oversight meetings, inputs, decisions, and minute tracking.
-* `04.5-Nonconformity-and-CAPA/` — Root-cause analysis, corrective action plans, and remediation logs.
-
-### Phase 5: Closing & Sign-Off (Certification & Handover)
-
-* `05.1-Certification-Readiness/` — Stage 1 and Stage 2 external audit preparation.
-* `05.2-Capstone-ISMS-Handover/` — Final portfolio pack, operational handover to steady-state, and project closeout.
+| Lifecycle Phase | Module Deliverable | ISO/IEC 27001:2022 Mapping | Primary Focus & Standard Requirement |
+| :--- | :--- | :--- | :--- |
+| **01. Initiation** | `01.1-Business-Case-and-Context` | Project Governance | Establishes commercial drivers and leadership justification. |
+| | `01.2-ISMS-Operating-Model` | **Clause 4.4** / **Clause 5.3** | Defines operational security processes and governance loops. |
+| | `01.3-Information-Assets-and-CIA` | **Clause 6.1.2** / **Annex A 5.9** | Baseline CIA impact scoring across primary informational assets. |
+| | `01.4-ISO-Family-Mapping` | **ISO 27001 / 27002** | Structural relationship between requirements and control guidance. |
+| **02. Planning** | `02.1-Organizational-Context` | **Clause 4.1** | Analysis of internal and external issues affecting ISMS outcomes. |
+| | `02.2-Interested-Parties` | **Clause 4.2** | Requirement register for legal, regulatory, and contractual stakeholders. |
+| | `02.3-ISMS-Scope-Statement` | **Clause 4.3** | Defining physical, logical, operational, and organizational boundaries. |
+| | `02.4-Asset-Inventory` | **Annex A 5.9 - 5.11** | Asset ownership, classification, acceptable use, and return protocols. |
+| | `02.5-Implementation-Roadmap` | **Clause 6.2** | Security objectives, project milestones, and timeline planning. |
+| | `02.6-Gap-Assessment` | **Clause 6.1.1** | Clause-by-clause baseline analysis to determine current readiness. |
+| | `02.7-Risk-Assessment-Methodology` | **Clause 6.1.2** | Defining risk criteria, scoring matrices, and impact evaluation models. |
+| | `02.8-Statement-of-Applicability-SoA` | **Clause 6.1.3(d)** | Formal selection/exclusion baseline for all Annex A security controls. |
+| **03. Execution** | `03.1-Leadership-Commitment` | **Clause 5.1** / **Clause 5.2** | Top management sign-off, resource commitment, and security policy. |
+| | `03.2-Information-Security-Policies` | **Clause 5.2** / **Annex A 5.1** | Topic-specific sub-policies, standards, and operational guidelines. |
+| | `03.3-Roles-Responsibilities-RACI` | **Clause 5.3** / **Annex A 5.2** | Operational RACI matrix establishing security authorities and duties. |
+| | `03.4-Competence-and-Awareness` | **Clause 7.2** / **Clause 7.3** | Security awareness training, competency records, and evaluation. |
+| | `03.5-Control-Implementation` | **Clause 8.1** / **Annex A 5-8** | Operational execution of technical, physical, and organizational controls. |
+| | `03.6-Risk-Treatment-Execution` | **Clause 6.1.3** / **Clause 8.3** | Executing risk treatment plans and obtaining residual risk acceptance. |
+| **04. Monitoring** | `04.1-Evidence-Collection` | **Clause 7.5** | Control of documented information, logging, and evidence repositories. |
+| | `04.2-Monitoring-Measurement-KPIs` | **Clause 9.1** | Evaluating security performance through key performance indicators (KPIs). |
+| | `04.3-Internal-Audit-Program` | **Clause 9.2** | Independent internal audit schedules, checklists, and audit findings. |
+| | `04.4-Management-Review` | **Clause 9.3** | Formal executive management review meetings, inputs, and action items. |
+| | `04.5-Nonconformity-and-CAPA` | **Clause 10.1** / **Clause 10.2** | Corrective action management, root cause analysis, and continuous improvement. |
+| **05. Closing** | `05.1-Certification-Readiness` | External Audit Prep | Readiness verification for Stage 1 & Stage 2 certification audits. |
+| | `05.2-Capstone-ISMS-Handover` | **Clause 4.4** / **Clause 10.1** | Operational handover from implementation project phase to steady-state governance. |
