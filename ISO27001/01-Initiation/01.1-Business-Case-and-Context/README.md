@@ -70,9 +70,11 @@ To maintain momentum and track health over a standard 9-month implementation cyc
 
 ## 5. Failure Modes to Avoid (Program Pitfalls)
 
-1. **Viewing ISO 27001 as an IT-Only Initiative:** Neglecting HR, Legal, Physical Security, and Operations. *Fix:* Ensure executive sponsorship sits above IT (e.g., CEO, CFO, or COO).
-2. **Premature Policy Drafting:** Purchasing templates and writing policies before completing context and risk assessments. *Fix:* Establish Context, Scope, and Risk Methodology before drafting operational policies.
-3. **Misrepresenting Audit Expectations to Leadership:** Promising a completely clean audit with zero findings. *Fix:* Inform leadership early that minor non-conformities are a normal part of continuous improvement.
-4. **Confusing Certification with Operational Compliance:** Stopping governance activities once the certificate is awarded. *Fix:* Design operational schedules for ongoing control tasks (e.g., quarterly access reviews) to ensure readiness for annual surveillance audits.
-5. **Unclear Single-Point Ownership:** Assigning ISMS responsibilities to a broad committee without a dedicated lead. *Fix:* Appoint a single named ISMS Owner with appropriate operational authority and resource allocation.
-6. **Outsourcing Total Program Ownership:** Relying on external consultants to write and manage the system independently. *Fix:* Ensure external advisors operate strictly in coaching roles while internal teams retain direct control ownership.
+| Failure Mode / Pitfall | Description | Operational Fix |
+| :--- | :--- | :--- |
+| **Viewing ISO 27001 as an IT-Only Initiative** | Neglecting HR, Legal, Physical Security, and Operations. | Ensure executive sponsorship sits above IT (e.g., CEO, CFO, or COO). |
+| **Premature Policy Drafting** | Purchasing templates and writing policies before completing context and risk assessments. | Establish Context, Scope, and Risk Methodology before drafting operational policies. |
+| **Misrepresenting Audit Expectations to Leadership** | Promising a completely clean audit with zero findings. | Inform leadership early that minor non-conformities are a normal part of continuous improvement. |
+| **Confusing Certification with Operational Compliance** | Stopping governance activities once the certificate is awarded. | Design operational schedules for ongoing control tasks (e.g., quarterly access reviews) to ensure readiness for annual surveillance audits. |
+| **Unclear Single-Point Ownership** | Assigning ISMS responsibilities to a broad committee without a dedicated lead. | Appoint a single named ISMS Owner with appropriate operational authority and resource allocation. |
+| **Outsourcing Total Program Ownership** | Relying on external consultants to write and manage the system independently. | Ensure external advisors operate strictly in coaching roles while internal teams retain direct control ownership. |
