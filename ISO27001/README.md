@@ -1,10 +1,3 @@
-The standard backtick syntax in Markdown code blocks prevents GitHub's renderer from parsing the internal code block correctly when copied. The standard standard HTML format below resolves both issues:
-
-1. **Mermaid Rendering:** The diagram syntax is updated to use clean standard labels and standard formatting to prevent syntax parsing failures.
-2. **Screenshot Relevance:** The screenshots are directly relevant because they show why the original formatting broke: image 1 shows the code output wrapped inside a global code block (preventing live Mermaid rendering), and image 2 shows a broken Markdown table caused by raw line breaks inside table cells.
-
-Copy and paste the formatted block below directly into your GitHub repository `README.md`:
-
 ```markdown
 # ISO/IEC 27001 Implementation & ISMS Governance Framework
 
@@ -126,7 +119,5 @@ ISO27001/
 
 * `05.1-Certification-Readiness/` — Stage 1 and Stage 2 external audit preparation.
 * `05.2-Capstone-ISMS-Handover/` — Final portfolio pack, operational handover to steady-state, and project closeout.
-
-```
 
 ```
