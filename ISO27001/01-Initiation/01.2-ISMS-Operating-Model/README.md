@@ -36,3 +36,19 @@ When significant organizational changes occur (e.g., onboarding a new critical S
        │
        ▼
   [7. Mgmt Review]       Report updated third-party risk exposure to the executive committee.
+
+```
+
+---
+
+## 3. Operational Loop Failure Modes
+
+| Loop Failure | Root Cause | Systemic Remedy |
+| --- | --- | --- |
+| **Evidence-Control Gap** | Controls operate in production, but evidence is not captured or retained. | Schedule automated or calendar-driven evidence collection at the moment of control execution. |
+| **Audit-Review Gap** | Internal audits identify non-conformities, but findings are not presented to leadership. | Standardize the Management Review agenda to mandate open/closed audit issue tracking. |
+| **Review-Improvement Gap** | Executive management reviews occur, but approved actions lack follow-through. | Assign a named owner, target completion date, and tracking ID to every decision in the meeting minutes. |
+
+```
+
+```
