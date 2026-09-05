@@ -1,5 +1,3 @@
----
-
 ## 1. Operational Cadence: The ISMS Owner Workflow
 
 Managing an ISMS requires routine coordination, monitoring, and operational execution across departments.
