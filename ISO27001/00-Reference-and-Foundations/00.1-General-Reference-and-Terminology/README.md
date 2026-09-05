@@ -106,3 +106,65 @@ To verify if a security mechanism is integrated into an active ISMS or operating
 3. **Evidence Artifact:** Where is the log or record stored, and what is its retention schedule?
 4. **Audit Scope:** On what date was this control last evaluated during an internal audit?
 5. **Management Review:** What executive decisions or performance metrics were logged for this control during the last governance review?
+
+---
+
+## 6. Information Asset Taxonomy & CIA Mechanics
+
+### Data vs. Information vs. Information Asset
+* **Data:** Unprocessed, discrete facts (e.g., an IP address, a timestamp, an isolated account balance).
+* **Information:** Data structured to provide context and business meaning (e.g., "Account X transferred $10,000 to IP Y at 03:00 UTC").
+* **Information Asset:** A managed container of information that possesses organizational value, has an assigned owner, and creates financial, operational, or legal consequences if compromised.
+
+---
+
+### The 6-Layer Information Footprint
+
+Information security governance must encompass all six operational layers where information resides:
+
+```text
+  ┌────────────────────────────────────────────────────────┐
+  │ 1. Cloud Infrastructure (S3, Databases, Secrets)        │
+  ├────────────────────────────────────────────────────────┤
+  │ 2. SaaS Platforms (CRM, Ticketing, HR, Messaging)     │
+  ├────────────────────────────────────────────────────────┤
+  │ 3. Endpoints (Laptops, Mobile Devices, Local Storage)  │
+  ├────────────────────────────────────────────────────────┤
+  │ 4. Personnel (Intellectual Property, Tacit Knowledge)  │
+  ├────────────────────────────────────────────────────────┤
+  │ 5. Physical Records (Contracts, ID Copies, Binders)   │
+  ├────────────────────────────────────────────────────────┤
+  │ 6. Third-Party Vendors (Processor DBs, SOC Logs)       │
+  └────────────────────────────────────────────────────────┘
+
+```
+
+---
+
+### Standard Information Classification Scheme (Annex A 5.12)
+
+To maintain operational usability, use a simple 4-tier classification model rather than over-engineered multi-level taxonomies:
+
+| Classification Level | Definition / Exposure Impact | Baseline CIA Orientation | Typical Asset Examples |
+| --- | --- | --- | --- |
+| **Public** | Information intended for public distribution; zero loss of confidentiality impact. | Low C / Low I / Med A | Marketing site content, public API docs, published PR releases. |
+| **Internal** | Information restricted to employees and contractors; minor operational disruption if leaked. | Med C / Med I / Med A | Internal wikis, organizational charts, project roadmaps. |
+| **Confidential** | Sensitive business data; financial, legal, or competitive damage if disclosed. | High C / High I / Med A | Customer PII, employee records, commercial contracts, financial statements. |
+| **Restricted** | Highest sensitivity; severe regulatory penalties or catastrophic reputational failure if breached. | Critical C / Critical I / Med-High A | Payment card data (PCI), biometrics, government identifiers, primary cryptographic keys. |
+
+---
+
+### CIA Triad to Safeguard Mapping
+
+Evaluating assets through CIA scoring directly dictates control selection during risk treatment:
+
+| Impact Dimension | Primary Operational Focus | Safeguard & Control Categories |
+| --- | --- | --- |
+| **Confidentiality (C)** | Preventing unauthorized access and information disclosure. | Encryption at rest/in transit, Identity & Access Management (IAM), Data Loss Prevention (DLP), Network Segregation. |
+| **Integrity (I)** | Preventing unauthorized modification, corruption, or deletion. | Input validation, cryptographic hashing, change management workflows, dual-custody (four-eyes) approvals. |
+| **Availability (A)** | Ensuring timely and reliable access for authorized users. | High Availability (HA) clustering, database replication, automated backups, Disaster Recovery (DR) failover. |
+
+```
+
+
+
