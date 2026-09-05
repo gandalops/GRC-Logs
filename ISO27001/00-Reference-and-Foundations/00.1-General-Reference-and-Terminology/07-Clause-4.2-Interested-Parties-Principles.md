@@ -1,6 +1,3 @@
-Here is the complete, formatted markdown content ready to be saved directly into **`ISO27001/00-Reference-and-Foundations/00.1-General-Reference-and-Terminology/07-Clause-4.2-Interested-Parties-Principles.md`**:
-
-```markdown
 # Clause 4.2 — Interested Parties & Requirements Principles
 
 ## 1. Intent and Standard Requirements
