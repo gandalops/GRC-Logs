@@ -18,3 +18,5 @@ This directory stores the core reference materials, architecture models, standar
   Clauses 4–10 baselining, 3-tier scoring methodology (Compliant/Partial/Non-Compliant), and report structure.
 * **[06. Clause 4.1 — Organizational Context Principles](./06-Clause-4-Context-Principles.md)**  
   Clause 4.1 core intent, the governance cascade (Context → Scope → Risk → Control), and the 12-category context taxonomy.
+* **[07. Clause 4.2 — Interested Parties & Requirements Principles](./07-Clause-4.2-Interested-Parties-Principles.md)**  
+  Clause 4.2 intent, 10-party stakeholder taxonomy, Needs vs. Expectations vs. Requirements model, and requirement translation methodology.
