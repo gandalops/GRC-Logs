@@ -34,3 +34,32 @@ Keep a single summary dashboard updated to immediately demonstrate system maturi
 | **Boundary & Scope** | Production Infrastructure, Customer Data Environments, Supporting Corporate Services |
 | **Core Outputs** | Risk Register, SoA, Policy Suite, Internal Audit Report, CAPA Log |
 | **Management Review** | Scheduled/Completed Biannually (Last Review: `YYYY-MM-DD`) |
+
+---
+
+## 3. Auditor Loop-Integrity Evaluation Questions
+
+External auditors utilize specific open-ended questions during Stage 1 and Stage 2 assessments to test whether the ISMS operates as an integrated system:
+
+| Question / Line of Inquiry | Target Clause | Loop Integration Objective |
+| :--- | :--- | :--- |
+| **"Walk me through how a specific risk becomes a control, and how that control generates evidence."** | Clauses 6.1, 8.1, 7.5 | Verifies complete traceability from risk identification through control execution to evidence retention. |
+| **"Show me the minutes and decision log from your most recent Management Review."** | Clause 9.3 | Tests whether top management actively reviews system performance and assigns continuous improvement resources. |
+| **"Who owns control A.5.15, when was it last operated, and where is the execution record stored?"** | Clauses 5.3, 9.1 | Verifies clear responsibility assignment and regular performance evaluation of specific Annex A controls. |
+| **"How were the findings and non-conformities from your last internal audit resolved?"** | Clauses 10.1, 10.2 | Assesses corrective action processing, root-cause analysis, and verification of resolution efficacy. |
+
+---
+
+## 4. Primary Audit Red Flags (Loop Disconnect Signals)
+
+Auditors systematically scan for indicators that signal a fragmented or purely paper-based ISMS:
+
+| Red Flag | System Defect | Corrective Action |
+| :--- | :--- | :--- |
+| **Siloed Registers** | Risks, controls, and evidence logs exist in disconnected spreadsheets without cross-referencing IDs. | Implement a unified asset-risk-control matrix with explicit relational mapping IDs. |
+| **Self-Auditing Operational Teams** | Controls are audited by the same individuals responsible for day-to-day operation. | Ensure internal auditors remain independent of the specific operational processes they inspect. |
+| **Unsubstantiated Management Reviews** | Minutes state "all systems normal" or "no changes needed" without reviewing performance data or metrics. | Mandate that Management Review agendas contain all required Clause 9.3 inputs and explicit decision outputs. |
+| **Orphaned Controls** | Policies or security tools exist in production without linkage to a documented Risk ID or Statement of Applicability entry. | Perform a mapping exercise to tie every active safeguard directly to a documented risk treatment option. |
+| **Unassigned Risk Ownership** | Risks are logged in the register, but no single individual is assigned operational accountability for treatment. | Assign every risk scenario to a specific, named role or individual with appropriate authority. |
+
+```
