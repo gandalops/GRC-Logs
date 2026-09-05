@@ -20,3 +20,7 @@ This directory stores the core reference materials, architecture models, standar
   Clause 4.1 core intent, the governance cascade (Context → Scope → Risk → Control), and the 12-category context taxonomy.
 * **[07. Clause 4.2 — Interested Parties & Requirements Principles](./07-Clause-4.2-Interested-Parties-Principles.md)**  
   Clause 4.2 intent, 10-party stakeholder taxonomy, Needs vs. Expectations vs. Requirements model, and requirement translation methodology.
+* **[08. Clause 4.3 — ISMS Scope Principles](08-Clause-4.3-ISMS-Scope-Principles.md)**  
+  Clause 4.3 core intent, the 6 scope dimensions, the dependency rule (Clause 4.3c), the "depends on" test, and defendable exclusion rules.
+* **[09. Annex A.5.9 — Asset Management Principles](09-Annex-A.5.9-Asset-Management-Principles.md)**  
+  Annex A 5.9 core intent, primary vs. associated assets taxonomy, the 6 core asset types, the Owner Rule, and the 3 discovery methodologies.
